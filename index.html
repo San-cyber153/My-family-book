@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body>
+       
+   <center style="margin-top: 40px;">
+    <h1>
+        My family book
+    </h1>
+    <img src="https://clipground.com/images/family-of-clipart-1.jpg" style="width: 30%;" id="Family_ member_image">
+    <h4 id ="family member_image"></h4>
+    <button onclick="update();">Next</button>
+   </center>
+  
+   <script>
+       var images = ["https://www.turnbacktogod.com/wp-content/uploads/2010/01/Mother-Wallpaper-02.jpg",
+       "https://www.turnbacktogod.com/wp-content/uploads/2010/01/Mother-Wallpaper-02.jpg",
+       "https://www.turnbacktogod.com/wp-content/uploads/2010/01/Mother-Wallpaper-02.jpg" ]
+       var names = ["Family Book"," Sanchith S", "Shantha Kumara N M", "Chaitra M"];
+    
+ var i = 0;
+ function update()
+ {
+     i++;
+     var number_of_family_member_in_array = 5
+     if(i>number_of_family_member_in_array)
+ {
+     i = 0;
+ }
+ var updated_image = images[i];
+ var updated_name = names[i];
+ document.getElementById("family_member_image").src = updated_image;
+ document.getElementById("family_member_name").innerHTML = updated_name;
+ }
+   </script>
+ 
+    </body>
+</html>
